@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "main": "expo-router/entry",
   "scripts": {
-    "android": "expo start --android",
+    "web": "expo start --web",
     "ios": "expo start --ios",
+    "android": "expo start --android",
+    "start:wsl": "REACT_NATIVE_PACKAGER_HOSTNAME=$(node get_network_local_ip.js) expo start -c",
     "start": "expo start",
-    "prebuild": "expo prebuild",
-    "lint": "eslint \"**/*.{js,jsx,ts,tsx}\" && prettier -c \"**/*.{js,jsx,ts,tsx,json}\"",
-    "format": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix && prettier \"**/*.{js,jsx,ts,tsx,json}\" --write",
-    "web": "expo start --web"
+    "type-check": "tsc --noEmit",
+    "lint": "eslint \"**/*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.0",

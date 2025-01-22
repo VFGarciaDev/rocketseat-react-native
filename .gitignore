@@ -12,7 +12,9 @@ web-build/
 # expo router
 expo-env.d.ts
 
-
+# WSL IP connection
+.env.local
+get_network_local_ip.js
 
 ios
 android
