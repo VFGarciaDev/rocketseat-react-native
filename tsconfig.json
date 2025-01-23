@@ -2,7 +2,6 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "allowUmdGlobalAccess": true,
-    
     "strict": true,
     "baseUrl": ".",
     "paths": {
